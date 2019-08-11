@@ -74,12 +74,31 @@ namespace mod1_assignment
 
 
             //output values from variables
-            Console.WriteLine("{0} {1}", studentFName, studentLName);
-            Console.WriteLine("Born on " + studentBirthdate);
-            Console.WriteLine($"Lives at {studentAddressLine1}, {studentAddressLine2},"
-                              + $"{studentCity}, {studentStateProvince}");
-            Console.WriteLine($"in {studentCountry}");
-            Console.WriteLine($"and is getting a degree in {degrees} under {deptHead}");
+            Console.WriteLine("Student First Name:");
+            studentFName = Console.ReadLine();
+
+            Console.WriteLine("Student Last Name:");
+            studentLName = Console.ReadLine();
+
+            Console.WriteLine("What degree are you enrolled in?");
+            degrees = Console.ReadLine();
+
+            Console.WriteLine("What is your street address?");
+            studentAddressLine1 = Console.ReadLine();
+
+            Console.WriteLine("What is your dorm room number?");
+            studentAddressLine2 = Console.ReadLine();
+
+            Console.WriteLine("What is your city?");
+            studentCity = Console.ReadLine();
+
+            Console.WriteLine("What is your state?");
+            studentStateProvince = Console.ReadLine();
+
+            Console.WriteLine($"{studentFName} {studentLName} is getting a "
+                              + $"degree in {degrees} and lives at {studentAddressLine1}, "
+                              + $"#{studentAddressLine2} in {studentCity}, {studentStateProvince}");
+
      
         }
     }
